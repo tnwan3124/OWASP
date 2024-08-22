@@ -1,4 +1,4 @@
-# Các lệnh hữu ích Linux
+# Các lệnh hay dùng
 
 ## chmod
     Mục đích: Đặt quyền truy cập cho file/thư mục (ai được đọc/ghi/thực thi).
@@ -30,3 +30,26 @@
     tryhackme@linux1:~$ grep "81.143.211.90" access.log
     81.143.211.90 - - [25/Mar/2021:11:17 + 0000] "GET / HTTP/1.1" 200 417 "-" "Mozilla/5.0 (Linux; Android 7.0; Moto G(4))"
     tryhackme@linux1:~$
+
+## nano
+    Để tạo hoặc sửa file
+
+> Điều hướng: Mũi tên lên/xuống, Enter để xuống dòng mới
+
+* Tính năng:
+
+    > Tìm kiếm văn bản (Ctrl + W)
+
+    > Sao chép/Dán (Ctrl + 6, Ctrl + U)
+
+    > Nhảy đến dòng (Ctrl + _)
+
+    > Xem số dòng (Ctrl + C)
+
+    > Thoát: Ctrl + X
+
+
+## wget
+    Tải tệp tin là một tính năng cơ bản trong máy tính, cho phép bạn lấy chương trình, script, hoặc ảnh từ internet.
+
+> wget https://assets.tryhackme.com/additionallinux-fundamentalspart3/myfile.txt   
