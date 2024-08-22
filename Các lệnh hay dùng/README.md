@@ -122,6 +122,6 @@
     ┌──(root㉿kali)-[~]
     └─# kill -9 18085
     [1]  + killed     python3 -m http.server
-                                                                                                                                    
+                                                                                                                                    Hi
 
 
