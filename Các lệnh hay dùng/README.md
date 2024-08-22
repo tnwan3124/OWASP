@@ -103,7 +103,25 @@
 * `username@remote_IP_address` : Thông tin đăng nhập vào máy tính từ xa
 * `:/path/to/file`: Đường dẫn đến tệp/thư mục trên máy tính từ xa
 
-**Lưu ý:**
+## HTTPServer
+`HTTPServer` giúp dễ dàng tạo một máy chủ web đơn giản
 
-* Bạn cần có kết nối SSH đến máy tính từ xa
-* `scp` sẽ yêu cầu mật khẩu nếu cần 
+**Khởi động** 
+
+    python3 -m http.server -b IP_Address Port
+
+**Dừng http.server**
+    
+    ps aux | grep http.server
+    root       18085  0.0  0.3  30424 18304 pts/1    T    05:16   0:00 python3 -m http.server
+
+    ┌──(root㉿kali)-[~]
+    └─# ps aux | grep http.server
+        root       18085  0.0  0.3  30424 18304 pts/1    T    05:16 0:00 python3 -m http.server
+
+    ┌──(root㉿kali)-[~]
+    └─# kill -9 18085
+    [1]  + killed     python3 -m http.server
+                                                                                                                                    
+
+
