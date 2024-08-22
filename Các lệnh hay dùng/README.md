@@ -123,5 +123,22 @@
     └─# kill -9 18085
     [1]  + killed     python3 -m http.server
 
+## Crontab
+    Một tệp đặc biệt chứa danh sách các tác vụ định kỳ (cron jobs) mà cron sẽ thực hiện.
+
+* `MIN`: Phút thực hiện (0-59)
+* `HOUR`: Giờ thực hiện (0-23)
+* `DOM`: Ngày trong tháng thực hiện (1-31)
+* `MON`: Tháng trong năm thực hiện (1-12)
+* `DOW`: Ngày trong tuần thực hiện (0-7, 0 và 7 đều là Chủ nhật)
+* `CMD`: Lệnh sẽ được thực thi
+
+Sao lưu thư mục "Documents" của người dùng "cmnatic" vào thư mục "/var/backups/" cứ sau 12 giờ.
+
+    0 */12 * * * cp -R /home/cmnatic/Documents /var/backups/
+
+* Dấu "/" thêm vào dùng để thực thi vào cứ mỗi thời gian được đặt, nếu không có thì chỉ thực hiện 1 lần.
+
+
 
 
