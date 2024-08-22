@@ -53,3 +53,57 @@
     Tải tệp tin là một tính năng cơ bản trong máy tính, cho phép bạn lấy chương trình, script, hoặc ảnh từ internet.
 
 > wget https://assets.tryhackme.com/additionallinux-fundamentalspart3/myfile.txt   
+
+## scp
+    scp là một lệnh để sao chép tệp an toàn giữa hai máy tính
+    Nó sử dụng giao thức SSH để xác thực và mã hóa
+
+Đoạn văn giải thích về cách sử dụng lệnh `scp` để truyền tệp an toàn giữa hai máy tính, sử dụng giao thức SSH để xác thực và mã hóa dữ liệu. 
+
+**Tóm tắt các điểm chính:**
+
+* `scp` là một lệnh để sao chép tệp an toàn giữa hai máy tính
+* Nó sử dụng giao thức SSH để xác thực và mã hóa
+* `scp` hoạt động theo mô hình SOURCE (nguồn) và DESTINATION (đích), cho phép bạn:
+    * Sao chép tệp & thư mục từ máy tính hiện tại đến máy tính từ xa
+    * Sao chép tệp & thư mục từ máy tính từ xa về máy tính hiện tại
+* Bạn cần biết tên người dùng và mật khẩu của cả hai máy tính để sử dụng
+
+**Ví dụ 1: Sao chép từ máy tính hiện tại đến máy tính từ xa**
+
+* Giả sử bạn có các thông tin sau:
+    * Địa chỉ IP máy tính từ xa: `192.168.1.30`
+    * Tên người dùng trên máy từ xa: `ubuntu`
+    * Tên tệp trên máy tính hiện tại: `important.txt`
+    * Tên bạn muốn đặt cho tệp trên máy tính từ xa: `transferred.txt`
+
+* Lệnh `scp` sẽ như sau:
+   ```bash
+   scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt
+   ```
+
+**Ví dụ 2: Sao chép từ máy tính từ xa về máy tính hiện tại**
+
+* Giả sử bạn có các thông tin sau:
+    * Địa chỉ IP máy tính từ xa: `192.168.1.30`
+    * Tên người dùng trên máy từ xa: `ubuntu`
+    * Tên tệp trên máy tính từ xa: `documents.txt`
+    * Tên bạn muốn đặt cho tệp trên máy tính hiện tại: `notes.txt`
+
+* Lệnh `scp` sẽ như sau:
+   ```bash
+   scp ubuntu@192.168.1.30:/home/ubuntu/documents.txt notes.txt
+   ```
+
+**Giải thích cú pháp lệnh `scp`**
+
+* `scp`: Tên lệnh
+* `SOURCE`: Đường dẫn đến tệp/thư mục nguồn
+* `DESTINATION`: Đường dẫn đến nơi lưu tệp/thư mục đích
+* `username@remote_IP_address` : Thông tin đăng nhập vào máy tính từ xa
+* `:/path/to/file`: Đường dẫn đến tệp/thư mục trên máy tính từ xa
+
+**Lưu ý:**
+
+* Bạn cần có kết nối SSH đến máy tính từ xa
+* `scp` sẽ yêu cầu mật khẩu nếu cần 
