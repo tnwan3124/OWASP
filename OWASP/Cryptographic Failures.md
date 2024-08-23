@@ -22,18 +22,18 @@ Lỗi mã hóa là bất kỳ lỗ hổng nào phát sinh từ việc sử dụn
 * SQLite là một định dạng phổ biến của cơ sở dữ liệu tệp phẳng, có thể được truy vấn bằng công cụ sqlite3.
 
 ## Ví dụ
-![alt text](<Screenshot 2024-08-23 123541.png>)
-ta có trang web như này và thử kiểm tra source của web xem có gì bất thường
-![alt text](<Screenshot 2024-08-23 123621.png>)
+![alt text](<img\Screenshot 2024-08-23 123541.png>) 
+ta có trang web như này và thử kiểm tra source của web xem có gì bất thường 
+![alt text](<img\Screenshot 2024-08-23 123621.png>)
 Ta có thể thấy có id=login và ta có thể truy cập thử
-![alt text](<Screenshot 2024-08-23 123652-1.png>)
+![alt text](<img\Screenshot 2024-08-23 123652-1.png>)
 Bây giờ ta lại phát hiện thêm 1 thư mục có tên là /assets, và kiểm tra xem thư mục này có gì
-![alt text](<Screenshot 2024-08-23 123746-1.png>)
+![alt text](<img\Screenshot 2024-08-23 123746-1.png>)
 Có 1 thư mục database trong này hãy thử tải và xem trong đây có gì  
-![alt text](<Screenshot 2024-08-23 123907-1.png>)
+![alt text](<img\Screenshot 2024-08-23 123907-1.png>)
 Thử dùng công cụ sqlite3 xem trong đây có gì
-![alt text](<Screenshot 2024-08-23 123945-1.png>)
+![alt text](<img\Screenshot 2024-08-23 123945-1.png>)
 Có 2 thư mục là sessions và users, ta kiểm tra các cột của users có gì
-![alt text](<Screenshot 2024-08-23 124127-1.png>)
+![alt text](<img\Screenshot 2024-08-23 124127-1.png>)
 Vậy ta đã có tài khoảng admin và đăng nhập thử
-![alt text](<Screenshot 2024-08-23 124215-1.png>)
+![alt text](<img\Screenshot 2024-08-23 124215-1.png>)
