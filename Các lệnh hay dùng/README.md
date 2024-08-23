@@ -178,7 +178,6 @@ SELECT * FROM sinhvien;
 Kết quả sẽ hiển thị danh sách sinh viên trong cơ sở dữ liệu.
 
 ### Giả sử chúng ta đã tải xuống thành công một cơ sở dữ liệu:
-**Bash**
 
 ```jsx
 user@linux$ ls -l 
@@ -192,8 +191,6 @@ Chúng ta có thể thấy rằng có một cơ sở dữ liệu SQLite trong th
 
 Để truy cập nó, chúng ta sử dụng `sqlite3 <database-name>`:
 
-**Bash**
-
 ```jsx
 user@linux$ sqlite3 example.db                     
 SQLite version 3.39.2 2022-07-21 15:24:47
@@ -203,7 +200,6 @@ sqlite>
 
 Từ đây, chúng ta có thể xem các bảng trong cơ sở dữ liệu bằng cách sử dụng lệnh `.tables`:
 
-**Bash**
 
 ```jsx
 user@linux$ sqlite3 example.db                     
@@ -215,7 +211,6 @@ customers
 
 Tại thời điểm này, chúng ta có thể kết xuất tất cả dữ liệu từ bảng, nhưng chúng ta sẽ không nhất thiết biết ý nghĩa của từng cột trừ khi chúng ta xem thông tin bảng. Đầu tiên, hãy sử dụng `PRAGMA table_info(customers);` để xem thông tin bảng. Sau đó, chúng tôi sẽ sử dụng `SELECT * FROM customers;` để kết xuất thông tin từ bảng:
 
-**Bash**
 
 ```jsx
 sqlite> PRAGMA table_info(customers);
