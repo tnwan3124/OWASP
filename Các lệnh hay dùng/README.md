@@ -1,5 +1,17 @@
 # Các lệnh hay dùng
 
+| Mục | Mô tả |
+|---|---|
+| [chmod](#chmod) | Thay đổi quyền truy cập cho file/thư mục |
+| [find](#find) | Tìm kiếm file trong hệ thống |
+| [grep](#grep) | Tìm kiếm mẫu cụ thể trong file hoặc đầu ra lệnh |
+| [nano](#nano) | Tạo và chỉnh sửa file văn bản |
+| [wget](#wget) | Tải file từ internet |
+| [scp](#scp) | Sao chép file an toàn giữa hai máy tính |
+| [HTTPServer](#httpserver) | Tạo máy chủ web đơn giản |
+| [Crontab](#crontab) | Lập lịch tác vụ định kỳ |
+| [sqlite3](#sqlite3) | Tương tác với cơ sở dữ liệu SQLite |
+
 ## chmod
     Mục đích: Đặt quyền truy cập cho file/thư mục (ai được đọc/ghi/thực thi).
     Đọc (r), ghi (w), thực thi (x)
